@@ -27,6 +27,7 @@ class Imagem {
     } // fim lerImagens   
 
     public function inserirImagem(){
+        /* arquivo é apenas uma referência ao arquivo da imagem */
         $sql = "INSERT INTO imagens(nome, arquivo) VALUES(:nome, :arquivo)";
         try{
             $consulta = $this->conexao->prepare($sql);

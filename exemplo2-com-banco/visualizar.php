@@ -26,6 +26,7 @@ $listaDeImagens = $imagem->lerImagens();
 <?php foreach( $listaDeImagens as $imagem ){ ?>
 
         <div class="col-md-4">
+            <!-- Indicação da referência do arquivo -->
             <img src="imagens/<?=$imagem['arquivo']?>" alt="" class="img-fluid">
             <p><?=$imagem['nome']?> </p>
         </div>

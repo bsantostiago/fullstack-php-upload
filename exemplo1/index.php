@@ -31,6 +31,8 @@ if(isset($_POST['enviar'])){
             <p class="form-group">
                 <label for="arquivo" class="form-label">Selecione a imagem em seu computador:</label>
 
+                <!-- atributo aceppt indica
+                os mime types de arquivos suportados -->
                 <input class="form-control" type="file" name="arquivo" id="arquivo" 
                 accept="image/jpeg, image/gif, image/svg+xml, image/png" required>
             </p>
